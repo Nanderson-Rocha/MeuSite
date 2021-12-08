@@ -1,0 +1,1 @@
+Alteração para criação das animações do site 
