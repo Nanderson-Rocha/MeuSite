@@ -19,32 +19,29 @@
     <!-- Estilo customizado -->
     <link rel="stylesheet" type="text/css" href="css/estilo.css">
 
-    <title>Nanderson Rocha</title>
+    <title>Nanderson Rocha Dev</title>
     
     <link rel="icon" href="img/code-icon.png">
-    
-
-
   </head>
+
+  
   <body>
     
     <header><!-- inicio Cabecalho -->
-      <nav class="navbar navbar-expand-sm navbar-dark fixed-top transparente">
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top transparente_top">
         <div class="container">
           
-          <a href="#" class="navbar-brand d-flex">
+          <a href="" class="navbar-brand d-flex">
             <i class="fas fa-code fa-2x align-self-center mr-2"></i>
-           <!-- <img src="img/code-icon.png" width="50" class="visualizar mr-2"> -->
-             <h4 class="display-6  align-self-center">NR</h4>
+            <h4 class="display-6  align-self-center">NR</h4>
           </a>
-
-          
+        
           <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-principal">
             <span class="navbar-toggler-icon"></span>
           </button>
 
-          <div class="collapse navbar-collapse" id="nav-principal">
-            <ul class="navbar-nav ml-auto">
+          <div class="collapse navbar-collapse scale-up-ver-center" id="nav-principal">
+            <ul class="navbar-nav ml-auto" style="backdrop-filter: blur(5px);">
               <li class="nav-item font-code-item">
                 <a href="" class="nav-link">Home</a>
               </li>
@@ -55,7 +52,7 @@
                 <a href="#servicos" class="nav-link">Serviços</a>
               </li>
               <li class="nav-item font-code-item">
-                <a href="#skills" class="nav-link">Habilidades</a>
+                <a href="#skills" class="nav-link">Conhecimentos</a>
               </li>
               
             </ul>
@@ -69,11 +66,11 @@
       <div class="container">
         <div class="row">
           <div class="col-md-6 d-flex"><!-- Textos da seção -->
-            <div class="align-self-center  transparente rounded  mov_right ">
-              <h1 class="display-4 font-code mb-4">Nanderson Rocha</h1>
-              <h2 class="mb-4">
+            <div class="align-self-center  transparente rounded ">
+              <h2 class="display-4 font-code mb-4 ">Nanderson Rocha</h2>
+              <h3 class="mb-4">
                 Front- End Developer 
-              </h2>
+              </h3>
 
              <p>Contatos
                 <a href="https://www.linkedin.com/in/nanderson-bruno-3ab762198/" target="_blank" class="btn btn-outline-light ml-3 mr-2">
@@ -87,17 +84,18 @@
             </div>
           </div><!--/fim textos da seção -->
           <div class="col-md-6 d-none d-md-block">
-            <img src="img/programador.png" style="width: 107%;">
+            <img src="img/programador.png" style="width: 107%;" data-anime="left">
           </div>
         </div>
       </div>
     </section><!--/fim seção home -->
 
-    <section id= sobre class="caixa_branca_top "><!--/Início seção saiba -->
-      <div class="container">
+    <section id= sobre class="caixa_branca_top" ><!--/Início seção sobre -->
+      <div class="container caixa_branca_top">
         <div class="row">
-          <div class="col-md-4 d-flex">
-            <div class="align-self-center mov_right">
+         
+          <div class="col-md-4 d-flex" data-anime="right">
+            <div class="align-self-center" >
               <h2>Citação</h2>
               <blockquote>
                     <p class="font-italic">
@@ -110,12 +108,12 @@
             </div>
           </div>
          
-          <div class="col-md-4">
+          <div class="col-md-4"  data-anime="bottom">
             <img src="img/Foto_capa_01-edit.png" class="align-self-end img-fluid">
           </div>
           
-          <div class="col-md-4 d-flex">
-            <div class="align-self-center">
+          <div class="col-md-4 d-flex" data-anime="top">
+            <div class="align-self-center" >
               <h1 class="display-4">Olá,</h1>
               <p>
                 Meu nome é Nanderson Bruno Menezes Rocha, tenho formação em Ciência da Computação na UFMA e cursos na área, tenho conhecimento nas principais rotinas que envolvem a área de Tecnologia da Informação em especial no desenvolvimento Front-End.
@@ -125,34 +123,34 @@
           
         </div>
       </div>
-    </section><!--/FIM seção saiba  <div class="col-md-3 transparente mr-2"> -->
+    </section><!--/FIM seção sobre  -->
 
     <section id=servicos class="caixa"><!--/Início seção Serviços -->
       <div class="container">
         <h2>Serviços</h2>
         <div class="row mt-4">
-              <div class="col-md-3 col-sm-6 transparente">
+              <div class="col-md-3 col-sm-6 transparente"   data-anime="right">
                   <img src="img/developer.png" class="img-fluid imagem_bloco">
                   <div class="texto_bloco">
                       <h6>WEBSITES</h6>
                       <p>Desenvolvimento de sites profissionais, sistemas web, blogs e lojas virtuais.</p>
                 </div>
               </div>
-              <div class="col-md-3 col-sm-6 transparente">
+              <div class="col-md-3 col-sm-6 transparente"   data-anime="top">
                 <img src="img/resposivo.png" class="img-fluid imagem_bloco" >
                 <div class="texto_bloco">
                       <h6>RESPONSIVIDADE</h6>
                       <p>Criação de sites responsivos para a melhor visualização em todas as resoluções e aparelhos.</p>
                 </div>
               </div> 
-              <div class="col-md-3  col-sm-6 transparente">
+              <div class="col-md-3  col-sm-6 transparente"  data-anime="bottom">
                 <img src="img/rede.png" class="img-fluid imagem_bloco" >
                 <div class="texto_bloco">
                     <h6>REDES DE COMPUTADORES</h6>
                     <p>Suporte e configuração de redes de computadores; Apoio ao gerenciamento de servidor Windows Server</p>
                 </div>  
               </div>
-              <div class="col-md-3 col-sm-6 transparente ">
+              <div class="col-md-3 col-sm-6 transparente"  data-anime="left">
                 <img src="img/reparo.png" class="img-fluid imagem_bloco" >
                 <div class="texto_bloco">
                       <h6>SUPORTE TI</h6>
@@ -262,13 +260,13 @@
               </div>
             </div>
                 <div class="row justify-content-end  col-md mt-4">  
-                  <div class="col-md-3  col-sm-6 mb-3">
+                  <div class="col-md-3  col-sm-6 mb-3 menu">
                     <h4>MENU</h4>
                     <ul class="navbar-nav">
                       <li><a href="">Home</a></li>
                       <li><a href="#sobre">Sobre</a></li>
                       <li><a href="#servicos">Serviços</a></li>
-                      <li><a href="#skills">Habilidades</a></li>
+                      <li><a href="#skills">Conhecimentos</a></li>
                     </ul>
                   </div>
                 
@@ -299,5 +297,9 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    
+    <!-- meu JavaScript-->
+    <script src="js/script.js"></script>
   </body>
+
 </html>
