@@ -71,3 +71,38 @@ function typeWriter(elemento) {
 const titulo = document.querySelector('h3');
 typeWriter(titulo);
 //FINAL ANIMAÇÃO DIGITAÇÃO TEXTO 
+
+
+
+//ANIMAÇÃO SCROLL SUAVE LINK INTERNO
+// Identificar o clique no menu
+// Verificar o item que foi clicado e fazer referência com o alvo
+// Verificar a distância entre o alvo e o topo
+// Animar o scroll até o alvo
+
+const menuItems = document.querySelectorAll('#nav-principal a[href^="#"]');
+
+menuItems.forEach(item => {
+  item.addEventListener('click', scrollToIdOnClick);
+})
+
+function getScrollTopByHref(element) {
+  const id = element.getAttribute('href');
+  return document.querySelector(id).offsetTop;
+}
+
+function scrollToIdOnClick(event) {
+  event.preventDefault();
+  const to = getScrollTopByHref(event.target) - 70;
+  scrollToPosition(to);
+}
+
+function scrollToPosition(to) {
+   window.scroll({
+     top: to,
+     behavior: "smooth",
+   });
+}
+//FIM ANIMAÇÃO SCROLL SUAVE LINK INTERNO
+
+

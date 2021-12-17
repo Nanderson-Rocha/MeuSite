@@ -21,7 +21,7 @@
 
     <title>Nanderson Rocha Dev</title>
     
-    <link rel="icon" href="img/NR-logo-2.png">
+    <link rel="icon" href="img/logo-aba.png">
   </head>
 
   
@@ -42,16 +42,16 @@
           <div class="collapse navbar-collapse scale-up-ver-center" id="nav-principal">
             <ul class="navbar-nav ml-auto" style="backdrop-filter: blur(5px);">
               <li class="nav-item font-code-item">
-                <a href="" class="nav-link">Home</a>
+                <a href="#home" class="nav-link js-scroll-trigger">Home</a>
               </li>
               <li class="nav-item font-code-item">
-                <a href="#sobre" class="nav-link">Sobre</a>
+                <a href="#sobre" class="nav-link js-scroll-trigger">Sobre</a>
               </li>
               <li class="nav-item font-code-item">
-                <a href="#servicos" class="nav-link">Serviços</a>
+                <a href="#servicos" class="nav-link js-scroll-trigger">Serviços</a>
               </li>
               <li class="nav-item font-code-item">
-                <a href="#skills" class="nav-link">Conhecimentos</a>
+                <a href="#skills" class="nav-link js-scroll-trigger">Conhecimentos</a>
               </li>
               
             </ul>
@@ -61,9 +61,15 @@
       </nav>
     </header><!--/fim Cabecalho -->
 
-    <section id="home" class="fundo-capa"><!-- Início seção home -->
+    <section id="home" ><!-- Início seção home -->
       <div class="container">
-        <div class="row">
+        <div class="row" >
+         
+          <div class="col-md-6 d-flex" style="overflow: hidden;" >
+            <img src="img/NR-logo-1.png"  style="position:absolute;" alt="">
+            <img src="img/Foto_capa_03_2.png"  class="img-fluid "  data-anime="right">
+          </div>
+
           <div class="col-md-6 d-flex"><!-- Textos da seção -->
             <div class="align-self-center  transparente rounded ">
               <h2 class="display-4 font-code mb-4 ">Nanderson Rocha</h2>
@@ -82,9 +88,7 @@
 
             </div>
           </div><!--/fim textos da seção -->
-          <div class="col-md-6 d-none d-md-block">
-            <img src="img/programador.png" style="width: 107%;" data-anime="left">
-          </div>
+          
         </div>
       </div>
     </section><!--/fim seção home -->
@@ -262,7 +266,7 @@
                   <div class="col-md-3  col-sm-6 mb-3 menu">
                     <h4>MENU</h4>
                     <ul class="navbar-nav">
-                      <li><a href="">Home</a></li>
+                      <li><a href="#home">Home</a></li>
                       <li><a href="#sobre">Sobre</a></li>
                       <li><a href="#servicos">Serviços</a></li>
                       <li><a href="#skills">Conhecimentos</a></li>
@@ -283,11 +287,13 @@
                   </div>
                 </div>  
         </div>
+
+        <div class="d-flex flex-column caixa-direitos">
+          Copyright © 2021 Nanderson Rocha Dev
+        </div> 
     </footer>
 
-    <div class="d-flex flex-column caixa-direitos">
-      Copyright © 2021 Nanderson Rocha Dev
-    </div>
+    
 
 
 
@@ -299,6 +305,15 @@
     
     <!-- meu JavaScript-->
     <script src="js/script.js"></script>
+
+    <!--RECOLHER MENU COLLAPSE-->
+    <script type="text/javascript">    
+      $('.js-scroll-trigger').click(function() {
+        $('.navbar-collapse').collapse('hide');
+      });
+     </script>
+
+
   </body>
 
 </html>

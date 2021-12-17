@@ -3,11 +3,16 @@ body{
 	background-attachment: fixed;
 	color: white; 
 	background-repeat: no-repeat;
-    background-size: 100% 100%;
+   /* background-size: 100% 100%;*/
 	font-size: 16px;
+	height: 100%;
 }
 
 /* topo e capa site */
+#home {
+	height: 100%;
+}
+
 .img-logo{
 	width: 100px;
 }
@@ -113,7 +118,7 @@ h3::after {
 }
 
 .caixa-rodape {
-	padding: 30px 0px;
+	padding: 30px 0px 0px 0px;
 	color: rgb(241, 245, 243);
 	background-color: rgb(15, 4, 65);
 }
@@ -127,10 +132,11 @@ h3::after {
 .caixa-direitos {
 	margin-top: 5px;
 	padding-top: 5px;
+	padding-left: 20px;
 	color: gray;
-	background-color: rgb(0, 0, 0);
-	text-align: center;
-	height: 40px; 
+	background-color: rgb(6, 3, 61);
+	text-align: left;
+	height: 30px; 
 	font-size: 14px;
 }
 
@@ -255,12 +261,13 @@ footer a{
 /* Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 575.98px) {
 	#home {
-		margin-top: 30%;
+		margin-top: -5%;
 		margin-bottom: 10%;
 	}
 	#sobre .caixa_branca_top{
-		padding-bottom: 10%;
+		padding-bottom: 15%;
 	}
+	
 }
 
 /* Small devices (landscape phones, 576px and up) */
